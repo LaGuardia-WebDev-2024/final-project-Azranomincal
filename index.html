@@ -1,112 +1,96 @@
-<!-- Final Project
+<!-- Unit 5 Project
 Requirements
-[  ] Customized HTML Page #1
-[  ] Customized HTML Page #2 
-[  ] Customized HTML Page #3
-[  ] Customized HTML Page #4
+[  ] <div> and <span>
+[  ] height: and width:
+[  ] margin: and padding: 
+[  ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
-[ no ] Feature 2 - Upload a Font
-[ no ] Feature 3 - Include jQuery
-[ no ] Feature 4 - Embed Code from Spotify/Google Docs/YouTube
-[ no ] Feature 5 - Customized HTML Page #5
+[ no ] Feature 1 - Flexbox
+[ no ] Feature 2 - Flip Card
+[ no ] Feature 3 - Navbar
+[ no ] Feature 4 - Shaking Animation
+[ no ] Feature 5 - Gradient Background
+[ no ] Feature 6 - Spotify Playlist
 -->
 
 <!DOCTYPE html>
 <html>
   <head>
+    <title>My website!</title>
     <meta charset="utf-8" />
-    <title>Final Project</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tiny5&display=swap"
+    />
     <style>
-      /* Styling Only Related To THIS Page */
-      /*~~~~~ Taken From:
-      https://www.w3schools.com/howto/howto_css_parallax.asp*/
-      .parallax {
-        /* The image used */
-        background-image: url("https://cdn.glitch.global/66249578-345e-4e9c-8fac-cabe98f682e4/image0.jpeg?v=1747657278943");
+      h1 {
+        color: rgb(237, 232, 220);
+        font-family: tiny5;
+        font-weight: 600;
+        font-size: 60px;
+      }
+      body {
+        background-color: rgb(193, 207, 161);
+      }
+      #start {
+        font-size: 50px;
+        color: rgb(231, 204, 204);
+      }
+      #iconpics {
+        font-size: 25px;
+        color: rgb(165, 182, 141);
 
-        /* Set a specific height */
-        min-height: 500px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        overflow: hidden;
 
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        display: center;
       }
-      .textblock {
-        min-height: 500px;
-        background-color: black;
-        color: white;
+      #iconpics a {
+        text-decoration: none;
+        padding: 8x;
+        background-color: ;
+        color: Pink;
       }
-      .parent-flex {
-        display: flex;
+
+      .first-sentence {
+        color: pink;
+        font-style: bold;
+        text-decoration: grey wavy underline;
       }
-      .child-flex {
-        background-color: green;
-        margin: 30px;
-        padding: 10px;
-        text-align: justify;
-        width: 40%;
-      }
-      .para-1{
-        display: flex;
-        align-items: center;
+      #info {
+        background-color: white;
       }
     </style>
   </head>
   <body>
-    <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul class="nav">
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://www.getfocused.no/wp-content/uploads/2022/09/White-YouTube-Logo-Transparent.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-      <li style="float: right">
-        <a target="_blank" href=""
-          ><img
-            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
-            style="width: 25px; margin: -5px"
-        /></a>
-      </li>
-    </ul>
-
-    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Ms. Hall | Web Dev 2024-2025</h1>
-    <div class="parallax"></div>
-
-    <div class="textblock parent-flex">
-      <div class="child-flex para-1">
+    <center>
+      <h1>START!</h1>
+      <p id="start">
+        ฅ^._.^ฅ
+        <br />
+        ↓
+      </p>
+      <br />
+      <p id="iconpics">
+        <a href="am.html"> 🏠︎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ │</a>
+        <a href="op.html"
+          >‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ͙͘͡‎‎★‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ │</a
+        >
+        <a href="ah.html">‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎‎ ‎ ‎ ‎☁︎⋅</a>
+      </p>
+      <div id="info">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+          <span class="first-sentence">Welcome to my website </span>
         </p>
       </div>
-      <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
-        </p>
-      </div>
-    </div>
+    </center>
   </body>
 </html>
